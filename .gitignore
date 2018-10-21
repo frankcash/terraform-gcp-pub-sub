@@ -1,0 +1,5 @@
+config/*.json
+.terraform/
+.DS_Store
+*.tfstate
+*.tfstate.backup
