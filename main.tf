@@ -5,11 +5,11 @@ provider "google" {
 }
 
 resource "google_pubsub_topic" "mytopic" {
-  name = "${var.bucket_name}"
+  name = "${var.pub_sub_name}"
 }
 
 resource "google_storage_bucket" "bucket" {
-  name = "${var.pub_sub_name}"
+  name = "${var.bucket_name}"
 }
 
 resource "google_storage_bucket_object" "archive" {
